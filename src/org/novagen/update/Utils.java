@@ -1,4 +1,4 @@
-package com.mmontuori.atrix_mrom;
+package org.novagen.update;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
@@ -11,6 +11,9 @@ import java.net.URLEncoder;
 import java.util.Enumeration;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import org.novagen.update.R;
+
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -28,8 +31,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 public class Utils {
-	final static public String TAG = "MROM";
-	final static public String BASEURL = "http://www.montuori.net/mrom/checkin.php";
+	final static public String TAG = "NovaGen";
+	final static public String BASEURL = "http://www.montuori.net/novagen/checkin.php";
 	static public String _data = null;
 
 	@SuppressWarnings("serial")

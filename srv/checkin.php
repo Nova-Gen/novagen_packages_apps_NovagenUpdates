@@ -13,7 +13,7 @@
 		die ("Error BUILD variable cannot be null");
 	}	
 	mysql_select_db('montuorinet', $con);
-	$sql = "INSERT INTO mrom_checkin (ip, build, device_id) VALUES ('$ip','$build','$device_id')";
+	$sql = "INSERT INTO novagen_checkin (ip, build, device_id) VALUES ('$ip','$build','$device_id')";
 	if (!mysql_query($sql,$con)) {
   		die('Error: ' . mysql_error());
   	}
@@ -25,7 +25,7 @@
 		$str = str_replace("'", "''", $str);
 		return $str;
 	}
-        $sth = mysql_query("SELECT * FROM mrom_conf where android_version='".escape($a6)."'", $con) or die('Error: ' . mysql_error());
+        $sth = mysql_query("SELECT * FROM novagen_conf where android_version='".escape($a6)."'", $con) or die('Error: ' . mysql_error());
         while ($r = mysql_fetch_object($sth)) {
 		$rows[] = $r;
 	}

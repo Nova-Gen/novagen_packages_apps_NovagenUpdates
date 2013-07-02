@@ -1,1 +1,1 @@
-MROM-Apk is the Update Check for MROM.
+NovagenUpdates is the Update Check for NovaGen.

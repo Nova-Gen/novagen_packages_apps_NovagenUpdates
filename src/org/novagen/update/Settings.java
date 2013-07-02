@@ -1,4 +1,6 @@
-package com.mmontuori.atrix_mrom;
+package org.novagen.update;
+
+import org.novagen.update.R;
 
 import android.content.Context;
 import android.content.SharedPreferences;

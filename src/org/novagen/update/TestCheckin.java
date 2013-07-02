@@ -1,4 +1,6 @@
-package com.mmontuori.atrix_mrom;
+package org.novagen.update;
+
+import org.novagen.update.R;
 
 import android.os.Bundle;
 import android.app.Activity;

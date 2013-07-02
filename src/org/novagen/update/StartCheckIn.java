@@ -1,4 +1,4 @@
-package com.mmontuori.atrix_mrom;
+package org.novagen.update;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

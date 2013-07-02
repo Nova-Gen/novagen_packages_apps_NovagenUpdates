@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.mmontuori.atrix_mrom" android:versionCode="170" android:versionName="1.7">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="org.novagen.update" android:versionCode="170" android:versionName="1.7">
 	<uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
 	<application android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
 		<receiver android:name="StartCheckIn">
@@ -7,14 +7,14 @@
 				<action android:name="android.intent.action.BOOT_COMPLETED" />
 			</intent-filter>
 		</receiver>
-		<service android:name=".CheckIn" android:icon="@drawable/ic_launcher" android:label="@string/checkin_service_name" android:process=":my_process" />
-		<activity android:name=".TestCheckin" android:label="@string/main_title" android:configChanges="orientation">
+		<service android:name="org.novagen.update.CheckIn" android:icon="@drawable/ic_launcher" android:label="@string/checkin_service_name" android:process=":my_process" />
+		<activity android:name="org.novagen.update.TestCheckin" android:label="@string/main_title" android:configChanges="orientation">
 			<intent-filter>
 				<action android:name="android.intent.action.MAIN" />
 				<category android:name="android.intent.category.LAUNCHER" />
 			</intent-filter>
 		</activity>
-		<activity android:name=".Settings" android:label="@string/prefs_title" android:configChanges="orientation" />
+		<activity android:name="org.novagen.update.Settings" android:label="@string/prefs_title" android:configChanges="orientation" />
 	</application>
 	<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
